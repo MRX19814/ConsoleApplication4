@@ -6,6 +6,10 @@ namespace ConsoleApplication4
     {
         static void Main(string[] args) 
         {
+            var inv = true;
+            var result = !inv;
+            Console.Write(result);
+            Console.ReadKey();
         }
     }
 }
