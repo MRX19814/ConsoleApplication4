@@ -6,15 +6,30 @@ namespace ConsoleApplication4
     {
         static void Main(string[] args) 
         {
-            var a = 7;
-            var b = 7; 
+            Console.WriteLine("Write your favorite color in English with a small letter");
 
-            if ( a==b )
-            {
-                Console.WriteLine("Условие истинно");
+            var color = Console.ReadLine();
+
+            if (color == "red") 
+            { 
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is red!");
             }
-            else {
-                Console.WriteLine("Условие ложно");
+            else if (color == "green")
+            {
+                Console.BackgroundColor= ConsoleColor.Green;
+                Console.ForegroundColor= ConsoleColor.Black;
+
+                Console.WriteLine("Your color is green!");
+            }
+            else 
+            {
+                Console.BackgroundColor= ConsoleColor.Cyan;
+                Console.ForegroundColor= ConsoleColor.Black;
+
+                Console.WriteLine("Your color is cyan!");
             }
         }
     }
