@@ -128,7 +128,7 @@ namespace ConsoleApplication4
             Console.WriteLine(temp);
         }*/ // Task 4.3.16
 
-        static void Main(string[] args) 
+       /* static void Main(string[] args) 
         {
             int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
 
@@ -149,6 +149,18 @@ namespace ConsoleApplication4
                 }
                 Console.WriteLine();
             }
+        }*/ // Task 4.3.17
+
+        static void Main(string[] args) 
+        {
+            (string name, int age) anketa;
+            Console.WriteLine("Введите имя: ");
+            anketa.name = Console.ReadLine();
+            Console.WriteLine("Введите возраст цифрами: ");
+            anketa.age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Ваше имя: {anketa.name}");
+            Console.WriteLine($"Ваш возраст: {anketa.age}");
         }
     }
 }
