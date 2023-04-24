@@ -87,7 +87,7 @@ namespace ConsoleApplication4
             }
         }*/ // Task 4.3.12
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
             int sum = 0;
@@ -97,6 +97,20 @@ namespace ConsoleApplication4
                 sum += arr[i];
             }
             Console.WriteLine(sum);
+        }*/ // Task 4.3.13
+
+        static void Main(string[] args)
+        {
+            int[] array = { 2, -1, 4, 7, -5, -2, -8, 9, 12, 15, -14 };
+
+            var num = 0;
+
+            for (int i = 0; i < array.Length; i++) 
+            {
+                if (array[i] > 0)
+                    num++;
+            }
+            Console.WriteLine(num);
         }
     }
 }
