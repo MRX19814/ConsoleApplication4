@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ConsoleApplication4
 {
@@ -63,13 +64,26 @@ namespace ConsoleApplication4
 
         public static void Main(string[] args)
         {
-            int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
-            for (int i = 0; i < array.GetUpperBound(1) + 1; i++)
-            {
-                for (int k = 0; k < array.GetUpperBound(0) + 1; k++)
-                    Console.Write(array[k, i] + " ");
+            var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
 
-                Console.WriteLine();
+            int temp; // создаем переменную для хранения элемента массива
+
+            for (int i = 0; i < arr.Length; i++) // цикл проходит по всем элементам массива
+            {
+                for (int j =  i + 1; j< arr.Length; j++) // цикл начинается с i+1 проходит по всем элементам массива, если элемент массива i больше j то они меняются местами
+                {
+                    if (arr[i] > arr[j])
+                    {
+                        temp = arr [i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+
+            foreach (var item in arr)
+            {
+                Console.Write(item);
             }
         }
     }
