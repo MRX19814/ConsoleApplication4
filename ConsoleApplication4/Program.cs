@@ -151,7 +151,7 @@ namespace ConsoleApplication4
             }
         }*/ // Task 4.3.17
 
-        static void Main(string[] args) 
+        /*static void Main(string[] args) 
         {
             (string name, int age) anketa;
             Console.WriteLine("Введите имя: ");
@@ -161,6 +161,47 @@ namespace ConsoleApplication4
 
             Console.WriteLine($"Ваше имя: {anketa.name}");
             Console.WriteLine($"Ваш возраст: {anketa.age}");
-        }
+        }*/ // Task 4.4.2
+
+        /*static void Main(string[] args) 
+        {
+            (string Name, string Surname, string Login, int LoginLength, bool Pet, double Age, string[] Colors) User;
+
+            for (int k = 0; k < 3; k++)
+            {
+                Console.WriteLine("Введите имя");
+                User.Name = Console.ReadLine();
+
+                Console.WriteLine("Введите фамилию");
+                User.Surname = Console.ReadLine();
+
+                Console.WriteLine("Введите логин");
+                User.Login = Console.ReadLine();
+                User.LoginLength = User.Login.Length;
+
+                Console.WriteLine("Есть ли у вас животное? Да или нет");
+
+                var result = Console.ReadLine();
+
+                if (result == "Да")
+                {
+                    User.Pet = true;
+                }
+                else
+                {
+                    User.Pet = false;
+                }
+
+                Console.WriteLine("Введите возраст пользователя");
+                User.Age = double.Parse(Console.ReadLine());
+
+                User.Colors = new string[3];
+                Console.WriteLine("Введите три любимых цвета пользователя");
+                for (int i = 0; i < User.Colors.Length; i++)
+                {
+                    User.Colors[i] = Console.ReadLine();
+                }
+            }
+        }*/ // Task 4.5.1-4.5.6
     }
 }
