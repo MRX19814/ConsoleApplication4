@@ -99,7 +99,7 @@ namespace ConsoleApplication4
             Console.WriteLine(sum);
         }*/ // Task 4.3.13
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             int[] array = { 2, -1, 4, 7, -5, -2, -8, 9, 12, 15, -14 };
 
@@ -111,6 +111,21 @@ namespace ConsoleApplication4
                     num++;
             }
             Console.WriteLine(num);
+        }*/ // Task 4.3.15
+
+        static void Main(string[] args) 
+        {
+            int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+            int temp = 0;
+            for (int i = 0; i <= arr.GetUpperBound(0); i++)
+            {
+                for (int j = 0; j <= arr.GetUpperBound(1); j++) 
+                {
+                    if (arr[i, j] > 0)
+                    temp++;
+                }
+            }
+            Console.WriteLine(temp);
         }
     }
 }
